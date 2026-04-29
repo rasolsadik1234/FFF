@@ -1,4 +1,4 @@
-const DISCORD_TICKET_LINK = 'https://discord.gg/YOUR_SERVER_LINK'
+const DISCORD_TICKET_LINK = 'https://discord.gg/g4v9sZJmHS'
 
 const categories = [
   { id:'all', name:'كل القوائم' },
