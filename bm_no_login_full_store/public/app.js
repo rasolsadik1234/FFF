@@ -10,7 +10,7 @@ const products = [
   { id: 4, name: 'Discord Nitro', category: 'subscriptions', price: 12000, img: 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&w=900&q=80', desc: 'اشتراك Discord Nitro.', rating: '4.8 (76)' },
   { id: 5, name: 'Gaming RGB Mouse', category: 'accessories', price: 80000, img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80', desc: 'ماوس ألعاب احترافي بإضاءة RGB.', rating: '4.6 (42)' },
   { id: 6, name: 'Mechanical Keyboard', category: 'accessories', price: 120000, img: 'https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=900&q=80', desc: 'كيبورد ميكانيكي مناسب للكيمنك.', rating: '4.7 (60)' },
-  { id: 7, name: 'عزام زمال للبيع ', category: 'accessories', price: 1000, img: 'https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=900&q=80', desc: 'سماعة ألعاب بصوت قوي ومايك واضح.', rating: '4.9 (51)' },
+  { id: 7, name: 'عزام زمال للبيع ', category: 'accessories', price: 1000, img: 'https://69f2840d1c78705e2c4b5c7d.imgix.net/1/12.webp?w=747&h=1328', desc: 'سماعة ألعاب بصوت قوي ومايك واضح.', rating: '4.9 (51)' },
   { id: 8, name: 'هاك ارك', category: 'accessories', price: 450000, img: 'https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=900&q=80', desc: 'كرسي ألعاب مريح للجلسات الطويلة.', rating: '4.9 (85)' }
 ]
 
