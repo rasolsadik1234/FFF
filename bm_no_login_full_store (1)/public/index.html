@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BM STORE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#home">
+    <img src="assets/logo.webp" alt="BM Logo">
+    <span>BM STORE</span>
+  </a>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">المنتجات</a>
+    <a href="#how">طريقة الطلب</a>
+    <a href="#contact">تواصل</a>
+  </nav>
+
+  <button id="cartBtn" class="cartBtn">🛒 <b id="cartCount">0</b></button>
+</header>
+
+<section id="home" class="hero reveal">
+  <div class="heroText">
+    <span class="pill">No Login Gaming Store</span>
+    <h1>متجر BM <b>بدون تسجيل دخول</b></h1>
+    <p>الزبون يختار المنتجات، يملأ بيانات الطلب، ويطلع له الطلب جاهز للإرسال لصاحب المتجر.</p>
+    <a href="#products" class="mainBtn">تسوق الآن</a>
+  </div>
+
+  <div class="heroImage">
+    <img src="assets/logo.webp" alt="BM">
+  </div>
+</section>
+
+<section class="features reveal">
+  <div>🚀 <b>سريع</b><small>بدون حساب</small></div>
+  <div>🛒 <b>سلة كاملة</b><small>إضافة وحذف</small></div>
+  <div>📋 <b>طلب جاهز</b><small>نسخ الطلب</small></div>
+  <div>🎮 <b>Gaming</b><small>منتجات قانونية</small></div>
+</section>
+
+<main>
+  <section class="tools reveal">
+    <input id="searchInput" placeholder="ابحث عن منتج...">
+    <select id="categoryFilter">
+      <option value="all">كل الأقسام</option>
+      <option value="cards">بطاقات</option>
+      <option value="subscriptions">اشتراكات</option>
+      <option value="accessories">اكسسوارات</option>
+    </select>
+  </section>
+
+  <section id="products" class="reveal">
+    <div class="titleRow">
+      <h2>المنتجات</h2>
+      <span>صور حقيقية</span>
+    </div>
+    <div id="productGrid" class="grid"></div>
+  </section>
+
+  <section id="how" class="how reveal">
+    <h2>طريقة الطلب</h2>
+    <div class="steps">
+      <div><b>1</b><p>اختار المنتج</p></div>
+      <div><b>2</b><p>أضفه للسلة</p></div>
+      <div><b>3</b><p>اكتب الاسم والوسيلة</p></div>
+      <div><b>4</b><p>انسخ الطلب وارسله</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <h2>التواصل</h2>
+    <p>غير معلومات التواصل من ملف <b>public/app.js</b></p>
+    <b>Discord: bmclanstore</b>
+  </section>
+</main>
+
+<aside id="cartPanel" class="cartPanel">
+  <div class="cartHead">
+    <h2>سلة الشراء</h2>
+    <button id="closeCart">×</button>
+  </div>
+
+  <div id="cartItems"></div>
+
+  <div class="checkoutBox">
+    <h3>بيانات الطلب</h3>
+    <input id="customerName" placeholder="اسمك">
+    <input id="customerContact" placeholder="واتساب أو ديسكورد">
+    <textarea id="customerNote" placeholder="ملاحظة اختيارية"></textarea>
+  </div>
+
+  <div class="cartFoot">
+    <div class="total">المجموع: <span id="totalPrice">0 IQD</span></div>
+    <button id="checkoutBtn">تجهيز الطلب</button>
+    <button id="copyBtn">نسخ الطلب</button>
+    <button id="clearCart">تفريغ السلة</button>
+  </div>
+</aside>
+
+<div class="modal" id="orderModal">
+  <div class="modalBox">
+    <button id="closeModal" class="modalClose">×</button>
+    <h2>طلبك جاهز ✅</h2>
+    <p>انسخ الطلب وارسله لصاحب المتجر.</p>
+    <textarea id="orderText" readonly></textarea>
+    <button id="copyOrder">نسخ الطلب</button>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
