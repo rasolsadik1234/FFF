@@ -5,7 +5,8 @@ const pages=[
   {id:'discord',name:'دسكورد',icon:'🎮',desc:'Nitro شهر، شهرين، سنة'},
   {id:'netflix',name:'نتفلكس',icon:'N',desc:'اشتراكات شهر، شهرين، سنة'},
   {id:'balance',name:'رصيد وشحن',icon:'📱',desc:'رصيد وخدمات شحن'},
-  {id:'ddos',name:'ديدوس',icon:'☠️',desc:'ديدوس'},
+  { id:'ddos', name:'ديدوس', icon:'☠️', desc:'ديدوس' },
+{ id:'cheat', name:'هاكات جميع الاعاب', icon:'🛠️', desc:'جميع انواع الغش متوفر لجميع الاعاب' },
   {id:'services',name:'خدمات',icon:'🎁',desc:'تفعيل ومساعدة قانونية'}
 ]
 
@@ -31,7 +32,14 @@ const products=[
   {id:40,page:'services',name:'تفعيل اشتراك',price:5000,img:'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',desc:'مساعدة تفعيل منتج رسمي.',duration:'مرة واحدة',details:'خدمة قانونية فقط.'},
   {id:41,page:'services',name:'إعداد Gaming PC',price:10000,img:'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80',desc:'مساعدة إعدادات جهاز.',duration:'جلسة',details:'بدون برامج غش أو مخالفة.'},
 
-  {id:43,page:'ddos',name:'ديدوس شهري',price:50000,img:'',desc:'اشتراك Premium.',duration:'شهر',details:'حسب القوه التبيه يصعد السعر.'}
+  { id:100, page:'ddos', name:'Steam Gift Card 20$', price:26000,
+  img:'images/steam_w900_q80.jpg',
+  desc:'بطاقة Steam رسمية', duration:'كود فوري', details:'تسليم عبر التكت' },
+
+{ id:101, page:'cheat', name:'تحسين أداء PC', price:10000,
+  img:'images/pc_opt_w900_q80.jpg',
+  desc:'تنظيف وتسريع الجهاز', duration:'جلسة',
+  details:'إعدادات آمنة وقانونية' },
 ]
 
 let cart=JSON.parse(localStorage.getItem('bm_cart_fixed'))||[]
