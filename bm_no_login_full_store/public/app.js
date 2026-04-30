@@ -5,7 +5,7 @@ const pages=[
   {id:'discord',name:'دسكورد',icon:'🎮',desc:'Nitro شهر، شهرين، سنة'},
   {id:'netflix',name:'نتفلكس',icon:'N',desc:'اشتراكات شهر، شهرين، سنة'},
   {id:'balance',name:'رصيد وشحن',icon:'📱',desc:'رصيد وخدمات شحن'},
-  {id:'balance',name:'ديدوس',icon:'📱',desc:'ديدوس'},
+  {id:'ddos',name:'ديدوس',icon:'📱',desc:'ديدوس'},
   {id:'services',name:'خدمات',icon:'🎁',desc:'تفعيل ومساعدة قانونية'}
 ]
 
@@ -24,6 +24,8 @@ const products=[
   {id:22,page:'netflix',name:'Netflix Premium',price:25000,img:'images/netflix_bm_w900_q80.jpg',desc:'اشتراك Premium.',duration:'شهر',details:'حسب الدولة والمتوفر.'},
   {id:23,page:'netflix',name:'Netflix Premium',price:250000,img:'images/netflix_bm_w900_q80.jpg',desc:'اشتراك Premium.',duration:'سنة',details:'يتم الاتفاق داخل التكت.'},
 
+  {id:42,page:'ddos',name:'ديدوس شهري',price:50000,img:'',desc:'اشتراك Premium.',duration:'شهر',details:'حسب القوه التبيه يصعد السعر.'},
+  
   {id:30,page:'balance',name:'رصيد زين',price:5000,img:'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',desc:'شحن رصيد زين.',duration:'حسب المبلغ',details:'اكتب رقم الهاتف داخل ملاحظة الطلب.'},
   {id:31,page:'balance',name:'رصيد آسياسيل',price:5000,img:'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80',desc:'شحن رصيد آسياسيل.',duration:'حسب المبلغ',details:'اكتب رقم الهاتف داخل ملاحظة الطلب.'},
 
