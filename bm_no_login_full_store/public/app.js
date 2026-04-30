@@ -24,13 +24,14 @@ const products=[
   {id:22,page:'netflix',name:'Netflix Premium',price:25000,img:'images/netflix_bm_w900_q80.jpg',desc:'اشتراك Premium.',duration:'شهر',details:'حسب الدولة والمتوفر.'},
   {id:23,page:'netflix',name:'Netflix Premium',price:250000,img:'images/netflix_bm_w900_q80.jpg',desc:'اشتراك Premium.',duration:'سنة',details:'يتم الاتفاق داخل التكت.'},
 
-  {id:42,page:'ddos',name:'ديدوس شهري',price:50000,img:'',desc:'اشتراك Premium.',duration:'شهر',details:'حسب القوه التبيه يصعد السعر.'},
   
   {id:30,page:'balance',name:'رصيد زين',price:5000,img:'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',desc:'شحن رصيد زين.',duration:'حسب المبلغ',details:'اكتب رقم الهاتف داخل ملاحظة الطلب.'},
   {id:31,page:'balance',name:'رصيد آسياسيل',price:5000,img:'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80',desc:'شحن رصيد آسياسيل.',duration:'حسب المبلغ',details:'اكتب رقم الهاتف داخل ملاحظة الطلب.'},
 
   {id:40,page:'services',name:'تفعيل اشتراك',price:5000,img:'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',desc:'مساعدة تفعيل منتج رسمي.',duration:'مرة واحدة',details:'خدمة قانونية فقط.'},
-  {id:41,page:'services',name:'إعداد Gaming PC',price:10000,img:'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80',desc:'مساعدة إعدادات جهاز.',duration:'جلسة',details:'بدون برامج غش أو مخالفة.'}
+  {id:41,page:'services',name:'إعداد Gaming PC',price:10000,img:'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80',desc:'مساعدة إعدادات جهاز.',duration:'جلسة',details:'بدون برامج غش أو مخالفة.'},
+
+  {id:43,page:'ddos',name:'ديدوس شهري',price:50000,img:'',desc:'اشتراك Premium.',duration:'شهر',details:'حسب القوه التبيه يصعد السعر.'}
 ]
 
 let cart=JSON.parse(localStorage.getItem('bm_cart_fixed'))||[]
