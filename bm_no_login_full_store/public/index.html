@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BM CLAN Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <button class="sideIcon active" data-page="home" onclick="goPage('home')" title="الرئيسية">⌂</button>
+    <button class="sideIcon" data-page="cards" onclick="goPage('cards')" title="بطاقات">💳</button>
+    <button class="sideIcon" data-page="discord" onclick="goPage('discord')" title="دسكورد">🎮</button>
+    <button class="sideIcon" data-page="netflix" onclick="goPage('netflix')" title="نتفلكس">N</button>
+    <button class="sideIcon" data-page="balance" onclick="goPage('balance')" title="رصيد">📱</button>
+    <button class="sideIcon" data-page="services" onclick="goPage('services')" title="خدمات">🎁</button>
+    <div class="sideBottom">
+      <button class="sideIcon" id="settingsBtn" title="الإعدادات">⚙</button>
+      <button class="sideIcon" id="themeToggle" title="دارك / لايت">☾</button>
+    </div>
+  </aside>
+
+  <section class="shell">
+    <header class="topbar">
+      <a class="brand" onclick="goPage('home')">
+        <img src="assets/logo.webp">
+        <div><b>BM CLAN</b><small>Ultra Gaming Store</small></div>
+      </a>
+      <nav id="navLinks"></nav>
+      <div class="topActions">
+        <button class="circleBtn" id="focusSearchBtn">⌕</button>
+        <button id="cartBtn" class="circleBtn cartCircle">🛒<span id="cartCount">0</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="page active homePage">
+        <div class="heroBanner">
+          <div class="heroText">
+            <span class="badge">BM STORE</span>
+            <h1>متجر BM CLAN</h1>
+            <p>تصميم فخم، أقسام مرتبة، وطلب مباشر عبر دسكورد تكت.</p>
+            <button onclick="goPage('netflix')">ابدأ التسوق</button>
+          </div>
+          <div class="heroLogo"><img src="assets/logo.webp"></div>
+        </div>
+        <div id="categoryCards" class="categoryCards"></div>
+      </section>
+
+      <section id="cards" class="page">
+        <div class="pageHero cardsHero"><span>GIFT CARDS</span><h1>بطاقات الشحن</h1><p>Steam, PlayStation, Xbox والمزيد.</p></div>
+        <input class="pageSearch" data-page="cards" placeholder="ابحث داخل بطاقات الشحن...">
+        <div class="productGrid" data-grid="cards"></div>
+      </section>
+
+      <section id="discord" class="page">
+        <div class="pageHero discordHero"><span>DISCORD</span><h1>اشتراكات دسكورد</h1><p>Nitro شهر، شهرين، سنة.</p></div>
+        <input class="pageSearch" data-page="discord" placeholder="ابحث داخل دسكورد...">
+        <div class="productGrid" data-grid="discord"></div>
+      </section>
+
+      <section id="netflix" class="page">
+        <div class="pageHero netflixHero"><span>NETFLIX</span><h1>اشتراكات Netflix</h1><p>شهر، شهرين، سنة حسب المتوفر.</p></div>
+        <input class="pageSearch" data-page="netflix" placeholder="ابحث داخل اشتراكات Netflix...">
+        <div class="productGrid" data-grid="netflix"></div>
+      </section>
+
+      <section id="balance" class="page">
+        <div class="pageHero balanceHero"><span>BALANCE</span><h1>رصيد وشحن</h1><p>رصيد وخدمات شحن مختلفة.</p></div>
+        <input class="pageSearch" data-page="balance" placeholder="ابحث داخل الرصيد...">
+        <div class="productGrid" data-grid="balance"></div>
+      </section>
+
+      <section id="services" class="page">
+        <div class="pageHero servicesHero"><span>SERVICES</span><h1>خدمات</h1><p>خدمات تفعيل ومساعدة قانونية.</p></div>
+        <input class="pageSearch" data-page="services" placeholder="ابحث داخل الخدمات...">
+        <div class="productGrid" data-grid="services"></div>
+      </section>
+    </main>
+
+    <footer class="featureBar">
+      <div><b>⚡ تسليم فوري</b><small>حسب المنتج والتوفر</small></div>
+      <div><b>🛡️ ضمان كامل</b><small>ضمان على الاشتراكات</small></div>
+      <div><b>🎧 دعم 24/7</b><small>داخل الدسكورد</small></div>
+      <div><b>🏷️ أسعار قوية</b><small>أفضل العروض</small></div>
+    </footer>
+  </section>
+</div>
+
+<aside id="cartPanel" class="cartPanel">
+  <div class="cartHead"><h2>سلة الطلب</h2><button id="closeCart">×</button></div>
+  <div id="cartItems"></div>
+  <div class="checkout">
+    <input id="customerName" placeholder="اسم الزبون">
+    <input id="customerDiscord" placeholder="يوزر الدسكورد">
+    <textarea id="customerNote" placeholder="ملاحظة / طريقة الدفع"></textarea>
+  </div>
+  <div class="cartFoot">
+    <div class="total">المجموع: <span id="totalPrice">0 IQD</span></div>
+    <button id="checkoutBtn">نسخ الطلب وفتح التكت</button>
+    <button id="clearCart" class="darkBtn">تفريغ السلة</button>
+  </div>
+</aside>
+
+<div id="productModal" class="modal"><div class="modalBox"><button id="closeProductModal" class="modalClose">×</button><div id="productDetails"></div></div></div>
+<div id="orderModal" class="modal"><div class="modalBox"><button id="closeOrderModal" class="modalClose">×</button><h2>الطلب جاهز ✅</h2><textarea id="orderText" readonly></textarea><button id="copyOrder">نسخ الطلب</button><button id="openDiscord">فتح التكت</button></div></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
