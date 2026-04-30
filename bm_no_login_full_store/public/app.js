@@ -5,7 +5,7 @@ const pages=[
   {id:'discord',name:'دسكورد',icon:'🎮',desc:'Nitro شهر، شهرين، سنة'},
   {id:'netflix',name:'نتفلكس',icon:'N',desc:'اشتراكات شهر، شهرين، سنة'},
   {id:'balance',name:'رصيد وشحن',icon:'📱',desc:'رصيد وخدمات شحن'},
-  {id:'ddos',name:'ديدوس',icon:'📱',desc:'ديدوس'},
+  {id:'ddos',name:'ديدوس',icon:'☠️',desc:'ديدوس'},
   {id:'services',name:'خدمات',icon:'🎁',desc:'تفعيل ومساعدة قانونية'}
 ]
 
