@@ -5,8 +5,8 @@ const pages=[
   {id:'discord',name:'دسكورد',icon:'🎮',desc:'Nitro شهر، شهرين، سنة'},
   {id:'netflix',name:'نتفلكس',icon:'N',desc:'اشتراكات شهر، شهرين، سنة'},
   {id:'balance',name:'رصيد وشحن',icon:'📱',desc:'رصيد وخدمات شحن'},
-  { id:'ddos', name:'ديدوس', icon:'☠️', desc:'ديدوس' },
-{ id:'cheat', name:'هاكات جميع الاعاب', icon:'🛠️', desc:'جميع انواع الغش متوفر لجميع الاعاب' },
+  {id:'ddos', name:'ديدوس', icon:'☠️', desc:'ديدوس' },
+  {id:'cheat', name:'هاكات جميع الاعاب', icon:'🛠️', desc:'جميع انواع الغش متوفر لجميع الاعاب' },
   {id:'services',name:'خدمات',icon:'🎁',desc:'تفعيل ومساعدة قانونية'}
 ]
 
@@ -36,7 +36,7 @@ const products=[
   img:'images/steam_w900_q80.jpg',
   desc:'بطاقة Steam رسمية', duration:'كود فوري', details:'تسليم عبر التكت' },
 
-{ id:101, page:'cheat', name:'تحسين أداء PC', price:10000,
+  { id:101, page:'cheat', name:'تحسين أداء PC', price:10000,
   img:'images/pc_opt_w900_q80.jpg',
   desc:'تنظيف وتسريع الجهاز', duration:'جلسة',
   details:'إعدادات آمنة وقانونية' },
